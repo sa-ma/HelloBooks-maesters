@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Books</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <div class = "grid-container">
+        <header class = "header">
+            <div class = "header-main">
+                <a href = "#">Hello-Books</a>
+        </header>
+        <main class = "main">
+            <section class = "category">
+                <h2>Category</h2>
+            </section>
+            <div class = "main-card">
+                <div class = "card">
+                <div class = "card-header">
+                  
+                    
+                    <h4> Add Category</h4>
+                </div>
+                <div class = "card-body">
+                <form action="" method="post">
+                        <div class="form-group">
+                                <input type="text" name = "name" required="required"/>
+                                <label for = "Name" class="control-label">Name</label><i class="bar"></i>
+                         </div>
+                         <div class="form-group">
+                                <input type="text" name = "author" required="required"/>
+                                <label for = "Author" class="control-label">Author</label><i class="bar"></i>
+                            </div>
+                            <div class="form-group">
+                                    <select name = "genre">
+                                      <option>Fantasy</option>
+                                      <option>Western</option>
+                                      <option>Romance</option>
+                                      <option>Thriller</option>
+                                      <option>Horror</option>
+                                      <option>Detective Story</option>
+                                      <option>Dystopia</option>
+                                    </select>
+                                    <label for="genre" class="control-label">Genre</label><i class="bar"></i>
+                                  </div>
+                         <div class="form-group">
+                                 <input type="text" name = "publisher" required="required"/>
+                                <label for = "Publisher" class="control-label">Publisher</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group">
+                                <input type="date" name = "date"required="required"/>
+                                <label for = "Date" class="control-label">Copyright Date</label><i class="bar"></i>
+                         </div>
+                        <div class="form-group">
+                                 <input type="text" name = "id" id = "isbn" required="required"/>
+                                <label for = "ISBN-13" class="control-label">1SBN-13</label><i class="bar"></i>
+                               <div>
+                                   <span class = "error"></span>
+                                </div> 
+                        </div>
+                       
+                         <div class="form-group">
+                                <input type="number" name = "quantity" required="required"/>
+                                <label for = "Quantity" class="control-label">Quantity</label><i class="bar"></i>
+                         </div>
+                         
+                         <div class="form-group">
+                                <textarea required="required"></textarea>
+                                <label for="textarea" class="control-label">Book Description</label><i class="bar"></i>
+                        </div>
+                        <div class="form-group">
+                                <input type="file" name = "image" required="required"/>
+                               <!-- <label for = "image" class="control-label">Book Image</label><i class="bar"></i>-->
+                         </div>
+                        
+                        <div class="button-container">
+                                <button type="button" class="button" id = "submit"><span>Submit</span></button>
+                              </div>
+                </form>
+            </div>
+                
+                </div>
+            </div>
+        </main>
+        <footer class = "footer">
+            <div class = "footer__copyright">&copy; 2019 All Rights Reserved</div>
+            <div class = "footer__signature">Programmer Circuit Batch 1</div>
+
+        </footer>
+    </div>
+    <script src= "index.js"></script>
+</body>
+
+</html>
