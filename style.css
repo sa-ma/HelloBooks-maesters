@@ -20,7 +20,7 @@ body::after,
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:50px 1fr 50px;
+    grid-template-rows:50px 1fr 100px;
     grid-template-areas: 
     "header"
     "main"
@@ -73,5 +73,6 @@ h2{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 15px;
+  padding: 0 20px;
 }
