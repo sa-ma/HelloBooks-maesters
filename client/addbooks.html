@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Hello Books - Add Books</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-logo">
+        <a href="#"> Hello Books </a>
+      </div>
+      <div class="navbar-toggle">&#9776;</div>
+      <nav class="navbar-items">
+        <div class="navbar-link"><a href="index.html"> Home </a></div>
+        <div class="navbar-link">
+          <a href="#"> About </a>
+        </div>
+        <div class="navbar-link">
+          <a
+            href="https://github.com/babadee001/HelloBooks-maesters"
+            target="_blank"
+          >
+            Repo
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <section class="form-area add-book-area">
+        <form action="" method="post" class="signin-form">
+          <div class="signin-header">
+            <h1>Add Books</h1>
+          </div>
+          <div class="add-book">
+            <div class="book-info">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="title"
+                  id=""
+                  class="input-field"
+                  placeholder="Enter Title"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="author"
+                  id=""
+                  class="input-field"
+                  placeholder="Enter Author"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="number"
+                  name="quantity"
+                  id=""
+                  class="input-field"
+                  placeholder="Enter Quanity"
+                />
+              </div>
+
+              <div class="form-group">
+                <select name="category" id="" class="input-field">
+                  <option value="" disabled selected>Choose Category</option>
+                  <option value="">Fantasy</option>
+                  <option value="">Thrillers</option>
+                  <option value="">Romance</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="book-cover">
+              <img
+                src="https://via.placeholder.com/150.png?text=Book+Cover/"
+                alt="Book Cover"
+                class="book-image"
+              />
+              <input
+                type="file"
+                name="file"
+                id="file"
+                value="Upload Book Cover"
+                class="input-file"
+              />
+              <label for="file" class="file-label">Choose an image</label>
+            </div>
+          </div>
+          <div class="error"></div>
+          <div class="form-group">
+            <input
+              type="submit"
+              name="submit"
+              id=""
+              class="btn btn-submit"
+              value="Add Book"
+            />
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <span>&copy;2019 All Rights Reserved</span>
+      <span>Programmers Circuit Batch 1</span>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

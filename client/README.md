@@ -1,10 +1,10 @@
 ##### What does this PR do?
 
-Display a sign in page to authenticate the user
+Display a dashboard that shows an overview of features and also a form to add books
 
 #### Description of task to be completed
 
-Develop an authentication page for the user
+Develop a dashboard where a user can add books and delete books
 
 #### How should it be manually tested
 
@@ -12,8 +12,8 @@ Used the console to check for errors and how responsive the page is
 
 #### Any backgrond context you want to provide?
 
-I used a theme based on the previous project. I honestly don't know how the theme will be uniform so everyone can use as this is my first time
+none
 
 ### What are the relevant pivotal tracker stories?
 
-`#164730255`
+`#164731141`

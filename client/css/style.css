@@ -10,6 +10,7 @@
   --primary-color: #004d40;
   --section-margin: 4rem auto;
   --secondary-color: #f88379;
+  --blue-color: rgb(26, 115, 232);
 }
 body {
   background: var(--bg-primary);
@@ -59,13 +60,21 @@ a {
   display: none;
 }
 
-/* Form */
+/* Sections */
 .form-area {
   width: 20%;
   margin: var(--section-margin);
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.add-book-area {
+  width: 50%;
+}
+/* Form */
+.error {
+  color: #cc0000;
+  text-align: center;
 }
 .signin-form {
   width: 100%;
@@ -90,6 +99,24 @@ a {
   border: none;
   border-bottom: 2px solid var(--primary-color);
 }
+.input-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.file-label {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  border: none;
+  display: block;
+  text-align: center;
+}
 .btn {
   width: 100%;
   padding: 10px;
@@ -109,6 +136,16 @@ a {
   background: #fff;
   color: var(--primary-color);
 }
+.btn-signup {
+  margin-top: 40px;
+  color: #fff;
+  background: var(--secondary-color);
+}
+.btn-signup:hover {
+  border: 1px solid var(--secondary-color);
+  background: #fff;
+  color: var(--secondary-color);
+}
 .btn-google {
   background: #cc0000;
   color: #fff;
@@ -127,6 +164,21 @@ a {
 }
 .form-link:hover {
   text-decoration: underline;
+  color: var(--secondary-color);
+}
+/* Add Books */
+.add-book {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.book-info {
+  flex-grow: 2;
+}
+.book-cover {
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
 }
 
 /* Footer */
@@ -137,6 +189,9 @@ footer {
   background-color: var(--primary-color);
   color: white;
   padding: 1.5rem;
+}
+/* Footer not staying at the bottom of the sign in page on viewports above 1200px */
+.fix {
   position: fixed;
   bottom: 0px;
 }

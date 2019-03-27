@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="css/dashboard.css" rel="stylesheet" />
+    <title>Hello Books - Dashboard</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="dashboard-header">
+        <div class="user-header">
+          <h3>Welcome SAMA</h3>
+
+          <h3 class="time">12:28pm</h3>
+        </div>
+
+        <div class="user-photo">
+          <img src="images/default_profile.png" alt="" class="profile_pic" />
+        </div>
+      </header>
+      <aside class="sidenav">
+        <div class="logo">
+          <h2>Hello <span>Books</span></h2>
+          <div class="nav-image">
+            <img src="images/default_profile.png" alt="" class="side-image" />
+            <h3>Samaila Bala</h3>
+          </div>
+          <div class="side-action">
+            <h3>Users</h3>
+            <ul>
+              <li><a href="">Add Users</a></li>
+              <li><a href="">Edit Users</a></li>
+              <li><a href="">View Users</a></li>
+            </ul>
+          </div>
+
+          <div class="side-action">
+            <h3>Books</h3>
+            <ul>
+              <li><a href="">Add Books</a></li>
+              <li><a href="">Add Categories</a></li>
+              <li><a href="">Update Books</a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <main class="dashboard-main">
+        <div class="card-container">
+          <div class="card blue-card">
+            <h3>No. of users</h3>
+            <h1>20</h1>
+          </div>
+          <div class="card pink-card">
+            <h3>No. of Categories</h3>
+            <h1>20</h1>
+          </div>
+          <div class="card green-card">
+            <h3>No. of Books</h3>
+            <h1>20</h1>
+          </div>
+        </div>
+
+        <div class="action-section">
+          <div class="card green-card">
+            <a href="addbooks.html"> Add Books</a>
+          </div>
+
+          <div class="card blue-card">
+            <a href="addbooks.html"> Add Categories</a>
+          </div>
+        </div>
+
+        <div class="book-overview">
+          <table class="overview-table">
+            <thead>
+              <th>S/N</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Category</th>
+              <th>Quanity</th>
+              <th colspan="3">Actions</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Origins</td>
+                <td>Dan Brown</td>
+                <td>Thriller</td>
+                <td>3</td>
+                <td><a href="#">View more</a></td>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Origins</td>
+                <td>Dan Brown</td>
+                <td>Thriller</td>
+                <td>3</td>
+                <td><a href="#">View more</a></td>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Origins</td>
+                <td>Dan Brown</td>
+                <td>Thriller</td>
+                <td>3</td>
+                <td><a href="#">View more</a></td>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+
+      <footer class="dashboard-footer">
+        <span>&copy;2019 All Rights Reserved</span>
+        <span>Programmers Circuit Batch 1</span>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

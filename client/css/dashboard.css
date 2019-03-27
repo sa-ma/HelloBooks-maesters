@@ -1,0 +1,192 @@
+@import url("style.css");
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "footer footer";
+  height: 100vh;
+}
+/* Dashboard Header */
+.dashboard-header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid var(--secondary-color);
+}
+.user-header {
+  display: flex;
+  justify-content: space-around;
+}
+.time {
+  margin-left: 30px;
+}
+.profile_pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-color);
+}
+/* Dashboard Side Navigation */
+.sidenav {
+  grid-area: sidenav;
+  background-color: var(--primary-color);
+  padding: 1rem;
+}
+.logo {
+  text-align: center;
+}
+.logo h2 {
+  color: white;
+}
+.logo span {
+  color: var(--secondary-color);
+}
+.nav-image {
+  margin: 80px 0 40px;
+  text-align: center;
+}
+.nav-image h3 {
+  color: white;
+}
+.side-image {
+  border-radius: 50%;
+  width: 130px;
+  height: 150px;
+  padding-bottom: 20px;
+}
+.side-action {
+  text-align: left;
+  padding-left: 40px;
+  margin: 30px 0;
+}
+.side-action h3 {
+  color: var(--secondary-color);
+}
+.side-action ul {
+  color: white;
+  list-style-type: none;
+  margin: 10px 6px;
+}
+.side-action ul li {
+  padding: 5px 0;
+}
+.side-action a {
+  color: white;
+}
+.side-action a:hover {
+  text-decoration: underline;
+}
+/* Main Section */
+.dashboard-main {
+  grid-area: main;
+  padding: 4rem 2rem;
+}
+.card-container,
+.action-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  color: white;
+  cursor: pointer;
+}
+.card a {
+  color: white;
+  font-size: 20px;
+  padding: 20px 10px;
+}
+.green-card {
+  background-color: var(--primary-color);
+}
+.pink-card {
+  background-color: var(--secondary-color);
+}
+.blue-card {
+  background-color: var(--blue-color);
+}
+.book-overview {
+  width: 80%;
+  margin: 30px auto;
+}
+
+/* Table */
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 8px;
+}
+.overview-table {
+  border: 1px solid var(--primary-color);
+}
+.overview-table thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+.overview-table tr,
+.overview-table td {
+  border: 1px solid var(--primary-color);
+}
+.overview-table a {
+  color: var(--secondary-color);
+}
+.overview-table a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard Footer */
+.dashboard-footer {
+  grid-area: footer;
+  border-top: 1px solid var(--secondary-color);
+}
+
+/* Mobile Style */
+@media only screen and (max-width: 899px) {
+  .card-container,
+  .action-section {
+    flex-direction: column;
+  }
+  .card {
+    width: 80%;
+    margin: 15px auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .user-header {
+    flex-direction: column;
+  }
+  .dashboard-header {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  .book-overview {
+    width: 100%;
+  }
+  .grid-container {
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+  }
+  .sidenav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .book-overview {
+    display: none;
+  }
+}
