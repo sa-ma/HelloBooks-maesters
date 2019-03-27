@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+body::after,
+ body::before,
+ input::after,
+ input::before,
+ select::after,
+ select::before,
+ body *::after,
+ body *::before{
+     box-sizing: border-box;
+ }
+/*define the grid container for mobile design*/
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:50px 1fr 50px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    height: 100vh;
+
+}
+.header{
+    grid-area: header;
+    background-color: #226666;
+}
+.main{
+    grid-area : main;
+
+}
+.footer{
+    grid-area: footer;
+    background-color: #226666;
+}
+/* header mobile settings*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-main a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+a:hover{
+color: rgba(102, 153, 153,0.2);
+}
+.category{
+    display: flex;
+    align-items:center;
+justify-content:center;
+border-bottom: 2px solid #407F7F;
+margin: 0 20px 30px;
+
+}
+h2{
+    color: #000;
+    font-size: 2em;
+
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
