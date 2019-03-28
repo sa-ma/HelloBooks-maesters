@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-weight: normal;
+}
+
+body {
+  font: fantasy, Helvetica, Arial, sans-serif;
+  font-size: 13px !important;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  line-height: 1.7em;
+  letter-spacing: 0.5em;
+}
+
+h1,
+h2 {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.nav-bar {
+  font-family: "Pacifico", "Merienda";
+  font-size: 14px;
+  text-align: center;
+  background-color: teal;
+  overflow: auto;
+  line-height: 20px;
+}
+
+.nav-bar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  float: right !important;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.nav-bar ul li {
+  float: left;
+}
+
+.nav-bar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-bar a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  background-color: teal;
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a.current {
+  background-color: #444;
+  color: whitesmoke;
+}
+
+.sidenav {
+  text-align: center;
+  color: #000;
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  background: white;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  color: teal;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+  text-decoration: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    margin-left: 15px;
+    list-style: none;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.coverage {
+  width: 1170;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+::before {
+  display: table;
+  content: " ";
+  box-sizing: border-box;
+}
+
+.newbooks {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  transition: box-shadow.25s;
+  padding: 24px;
+  margin: 0.5rem 0 1rem 0;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.showcasebooks {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+}
+
+.profilebar {
+  left: 0;
+  transform: translateX(0);
+  position: fixed;
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 4.6em !important;
+  width: 360px !important;
+  padding-bottom: 60px;
+  top: 0;
+  margin: 0;
+  background-color: #fff;
+  z-index: 999;
+  overflow-y: auto;
+  will-change: transform;
+}
+
+.profilebar .divider {
+  margin: 8px 0 0 0;
+}
+.profilebar list {
+  float: none;
+  line-height: 48px;
+}
+
+.profilebar .image {
+  height: 50px;
+  position: absolute;
+}
+
+.booktitle {
+  background-color: rgba(28, 31, 30, 0.66) !important;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  font-size: 21px !important;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.bookcontent {
+  padding: 24px;
+  border-radius: 0 0 2px 2px;
+  height: 60px;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+.booklists {
+  width: 20%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+  float: right;
+  padding: 0 0.75rem;
+  min-height: 1px;
+}
+
+image {
+  border-radius: 50px;
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #26a69a;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease-out;
+  height: 36px;
+  text-transform: uppercase;
+}
+
+footer {
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Pacifico", "Merienda";
+  background-color: teal;
+  color: white;
+  padding: 5px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  display: block;
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0;
+}
+
+p {
+  margin-top: 20px;
+}
+
+.bookimage {
+  display: inline-block;
+}
